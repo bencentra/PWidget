@@ -33,27 +33,8 @@ void setup() {
 void draw() {
 	background(0);
 	rotation = (int) map(mouseX, 0, 800, -90, 90);
-	//rotation = (int) map(mouseX, 0, 800, (float) -(Math.PI/2), (float) Math.PI/2);
-	println(rotation);
 	svgTest.rotation(rotation);
 	imageTest.rotation(rotation);
 	svgTest.draw();
 	imageTest.draw();
 }
-
-/*
-void keyPressed() {
-	if (key == '1') {
-		rotation = -45;
-	}
-	else if (key == '2') {
-		rotation = 0;
-	}
-	else if (key == '3') {
-		rotation = 45;
-	}
-	// Set the rotation for the widgets
-	svgTest.rotation(rotation);
-	imageTest.rotation(rotation);
-}
-*/
